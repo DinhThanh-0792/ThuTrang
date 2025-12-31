@@ -90,7 +90,9 @@
   </head>
   <body>
     <div id="loading">ĐANG TẢI... VUI LÒNG CHO PHÉP CAMERA</div>
-    <div id="cam-preview"><video class="input_video"></video></div>
+    <div id="cam-preview"><video class="input_video" autoplay
+  muted
+  playsinline></video></div>
 
     <canvas id="firework-canvas"></canvas>
 
@@ -345,6 +347,7 @@
           },
           width: 160,
           height: 120,
+          facingMode: "user",
         });
         cameraUtils.start();
         init();
